@@ -45,10 +45,10 @@ def main():
     CnR_Data = Resampled_Data.dropna(axis = 0)
 
     # Exporting Cleaned and Resampled Sheet
-    CnR_Data.to_excel("Cleaned_and_Resampled_Data.xlsx")
+    CnR_Data.to_excel("CleanedData.xlsx")
 
     # Getting data date by date
-    df = CnR_Data
+    df = new_Data
 
     # Retrieved all the dates used in the dataframe
     dates = sorted(list(set(df.index.date)))
